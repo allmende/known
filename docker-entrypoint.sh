@@ -43,7 +43,8 @@ else
 fi
 
 # Environment creation
-echo "filesystem = 'local'"         > /var/www/html/config.ini
+echo "url = '${URL}'"         > /var/www/html/config.ini
+echo "filesystem = 'local'"         >> /var/www/html/config.ini
 echo "uploadpath = '/var/www/html/Uploads'" >> /var/www/html/config.ini
 echo "database = 'MySQL'"          >> /var/www/html/config.ini
 echo "dbname = 'known'"       >> /var/www/html/config.ini
