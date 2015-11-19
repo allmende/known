@@ -18,6 +18,22 @@ docker-compose up
 ```
 
 After setting up [nginx-proxy](https://github.com/jwilder/nginx-proxy) you can access the instance on your machine.
+=======
+You can now access your instance on the port 80 of the IP of your machine.
+
+## Access it from Internet
+
+We recommend the usage of SSL, so the easiest is to modify the `nginx.conf` file.
+
+Once it is done, you can connect to the port of the host by adding this line to `docker-compose.yml`:
+```
+web:
+...
+  - ports:
+    - "443:443"
+    - "80:80"
+...
+```
 
 ## Installation
 
