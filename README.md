@@ -12,8 +12,7 @@ Make sure you have [docker-compose](http://docs.docker.com/compose/install/) ins
 git clone https://github.com/allmende/known.git allmende/known
 cd allmende/known
 # edit variables:
-vim .env
-vim docker-compose.yml
+vi env
 docker-compose up
 ```
 
